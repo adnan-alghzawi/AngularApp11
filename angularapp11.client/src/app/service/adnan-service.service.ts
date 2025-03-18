@@ -17,4 +17,12 @@ export class AdnanServiceService {
     return this._url.get<any>("https://67cea6ee125cd5af757b6514.mockapi.io/Users")
   }
 
+  postNewCategory(data: any): Observable<any> {
+    return this._url.post("https://67cd64b6dd7651e464ee3d63.mockapi.io/categories", data);
+  }
+
+  postNewProduct(data: any): Observable<any> {
+    return this._url.post("https://67cd64b6dd7651e464ee3d63.mockapi.io/products", data);
+  }
+
 }
